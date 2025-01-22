@@ -2,6 +2,6 @@ gunicorn
 opencv-python
 ultralytics
 moviepy
-
+ffmpeg
 supervision
 fer
