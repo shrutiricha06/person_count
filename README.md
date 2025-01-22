@@ -1,25 +1,26 @@
-# code that counts the number of people in a live video
+# Real-Time Emotion and Detection with YOLOv8 and FER
 
-# person_count
-this is a software that conts the number of people from a live video and also counts the number of people who are happy and not happy
-
-## installation
-
-create a viritual environment using cmd
-command: python -m venv venv
-
-step1: install ultralytics
-step2: install supervision
-step 3: install fer
+This project integrates real-time detection using YOLOv8 and emotion recognition with the FER (Facial Expression Recognition) library. The application detects and counts people in a webcam feed, analyzes their facial expressions, and provides counts for "Happy" and "Not Happy" individuals.
 
 
+## Features
 
-## usage
+1. Real-Time Detection: Processes live webcam feed for object and emotion detection.
+2. YOLOv8 Integration: Utilizes the powerful YOLOv8 model for detecting people.
+3. Emotion Recognition: Leverages the FER library to classify emotions from detected faces.
+4. Annotated Output: Displays bounding boxes with labels for detected objects and emotions.
+5. Interactive Dashboard: Shows real-time counts for total individuals, happy, and not happy states.
 
-step1: open cmd
-step2: redirect to the folder using cd
-step3: run the python code -- python main.py
-step4: to quit: press ctrl+c
+## Dependencies
+1. Python 3.8+
+2. OpenCV: For video capture and frame processing.
+3. Ultralytics YOLOv8: For object detection.
+4. FER: For facial emotion recognition.
+5. Supervision: For annotation and bounding box visualization.
 
 
-
+## How It Works
+1. The YOLOv8 model detects objects in the video feed.
+2. Detected "person" bounding boxes are cropped and passed to the FER emotion detection model.
+3. Emotions are classified (e.g., "Happy," "Neutral"), and the results are annotated on the frame.
+4. Real-time counts of "Happy," "Not Happy," and "Total" individuals are displayed on the video feed.
