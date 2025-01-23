@@ -1,9 +1,13 @@
 gunicorn
 
 gradio
-opencv-python
+opencv-python-headless
 ultralytics
 moviepy
 ffmpeg
 supervision
 fer
+tensorflow
+mtcnn
+numpy
+argparse
